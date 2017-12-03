@@ -1,0 +1,54 @@
+.message-input{
+  display: flex;
+
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: stretch;
+
+  textarea{
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    padding: 10px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .btns {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: column;
+
+    button{
+      flex-grow: 1;
+      flex-wrap: wrap;
+      background-color: #444;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    button:hover, button.active{
+      background-color: #555;
+    }
+  }
+
+  textarea, button{
+    outline: none;
+    border: none;
+    font-family: 'icomoon', 'monospace';
+    resize: none;
+  }
+
+  height: 90px;
+
+  background: rgba(255,255,255,0.5);
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

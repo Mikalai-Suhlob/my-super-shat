@@ -1,0 +1,138 @@
+.chat-app{
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  .header{
+    width: inherit;
+    height: 40px;
+
+    background-color: rgba(255,255,255,0.2);
+
+    text-align: right;
+
+    ul{
+      padding: 0;
+      margin: 0;
+
+      display: flex;
+      justify-content: flex-end;
+
+      li{
+        display: inline-block;
+        line-height: 40px;
+        padding: 0px 19px;
+        margin-left: 5px;
+
+        &.info {
+          line-height: 20px;
+
+          div:nth-child(2) {
+            font-size: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+        }
+
+        &.btn {
+          cursor: pointer;
+        }
+
+        &.close {
+          background: rgba(255,0,0,0.4);
+        }
+      }
+    }
+  }
+
+  .container{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 130px);
+
+    .list-container{
+      width: 250px;
+      max-height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .messages-container{
+      max-height: 100%;
+
+      overflow-y: scroll;
+
+      flex-wrap: wrap;
+      flex-grow: 1;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+      }
+
+      .messages-back{
+        padding: 0px 20px;
+        display: flex;
+
+        min-height: 100%;
+
+        justify-content: flex-end;
+        align-content: flex-end;
+
+        flex-direction: column;
+
+        .message{
+          display: block;
+          text-align: left;
+
+
+          .message-object{
+            display: inline-block;
+            margin: auto;
+            text-align: left;
+
+            .name{
+              font-size: 16px;
+              font-weight: 600;
+
+              small{
+                font-size: 10px;
+                margin-left: 5px;
+                opacity: 0.6;
+              }
+            }
+
+            .mess{
+              padding: 0px 15px;
+              padding-bottom: 10px;
+              border-bottom: 1px solid #444;
+
+              *{
+                margin: 3px 5px;
+                padding: 0;
+              }
+            }
+
+            .date{
+              font-size: 12px;
+              text-align: right;
+            }
+          }
+
+          &.me{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,54 @@
+html {
+  width: 100vw;
+  height: 100vh;
+
+  color: #fff;
+
+  background: #000012;
+
+  body{
+    width: inherit;
+    height: inherit;
+
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    text-align: center;
+
+    background: rgba(0,0,0,0.6);
+
+    .root-app{
+      position: fixed;
+
+      width: inherit;
+      display: flex;
+
+      align-items: center;
+      align-content: center;
+
+      left: 0;
+      right: 0;
+
+      max-width: 1000px;
+      min-width: 300px;
+
+      height: 100vh;
+      margin: 0 auto;
+
+      background: rgba(255,255,255,0.1);
+
+      &.hide{
+        z-index: -1;
+      }
+
+      .loader{
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 100vh;
+      }
+    }
+  }
+}

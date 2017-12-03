@@ -1,0 +1,8 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2015",
+    "jsx": "preserve",
+    "module": "commonjs"
+  }
+}

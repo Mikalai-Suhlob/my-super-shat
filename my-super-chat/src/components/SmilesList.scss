@@ -1,0 +1,46 @@
+
+
+.smiles{
+  width: 300px;
+  height: 200px;
+
+  font-family: 'icomoon', 'monospace';
+
+  overflow-y: scroll;
+
+  border: 1px solid #999;
+  border-radius: 5px;
+
+  background: #fff;
+  position: absolute;
+
+  right: 0;
+  bottom: 70px;
+
+  color: #444;
+
+  z-index: 1;
+
+  ul{
+    padding: 0;
+    margin: 0;
+
+    display: block;
+
+    text-align: justify;
+
+    li{
+      display: inline-block;
+      padding: inherit;
+      margin: inherit;
+
+      padding: 12px;
+
+      cursor: pointer;
+
+      &:hover{
+        background: #ddd;
+      }
+    }
+  }
+}

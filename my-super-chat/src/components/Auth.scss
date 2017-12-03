@@ -1,0 +1,43 @@
+.login-form {
+  width: 300px;
+
+  margin: auto;
+
+  background: rgba(255,255,255,0.2);
+
+  padding: 20px 0;
+
+  .error{
+    background-color: #420000;
+  }
+
+  .form-input{
+    padding: 10px;
+
+    span{
+      display: block;
+      text-align: left;
+
+      font-weight: 600;
+
+      margin-left: 5px;
+      margin-bottom: 2.5px;
+    }
+
+
+    input, button{
+      width: 270px;
+      padding: 10px 0px;
+
+
+      border: none;
+    }
+
+    button{
+      cursor: pointer;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
