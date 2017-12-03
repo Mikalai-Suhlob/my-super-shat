@@ -4,21 +4,21 @@
 ## Dependencies:
 
 1. NodeJS (https://nodejs.org)
-2. TypeScript (`` `npm i -g typescript```)
+2. TypeScript (```npm i -g typescript```)
 3. Ruby (https://rubyinstaller.org/)
-4. SASS (`` `gem install sass```)
+4. SASS (```gem install sass```)
 5. MongoDB (https://www.mongodb.com/)
-6. WebPack (`` `npm i -g webpack```)
+6. WebPack (```npm i -g webpack```)
 
 ## Running:
 
-1. `` `npm i```
-2. `` `tsc``` (You can close after compilation)
-3. `` `sass public / styles: public / styles --watch``` (You can close after compilation)
-4. `` `npm start```
-5. `` `cd src && npm i && npm start``` (You can close after compilation)
+1. ```npm i```
+2. ```tsc``` (You can close after compilation)
+3. ```sass public / styles: public / styles --watch``` (You can close after compilation)
+4. ```npm start```
+5. ```cd src && npm i && npm start``` (You can close after compilation)
 
-##Using:
+## Using:
 
 1. http: // localhost: 8080
 2. 0.0.0.0:8080
